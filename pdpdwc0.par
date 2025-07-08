@@ -1,0 +1,8 @@
+PROBLEM_FILE = C:\Users\wany160\OneDrive - The University of Auckland\MltiAgent\LKH3-PDPTW\PDPTW\pdptw\pdpdwc0.pdptw
+MAX_TRIALS = 5000
+MOVE_TYPE = 2
+PATCHING_C = 3
+PATCHING_A = 2
+RUNS = 1
+TOUR_FILE = C:\Users\wany160\OneDrive - The University of Auckland\MltiAgent\LKH3-PDPTW\PDPTW\TOURS\pdpdwc0.tour
+    

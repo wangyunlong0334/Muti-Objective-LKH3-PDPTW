@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{6D7799F8-AE4E-4558-81CF-6A58FF896238}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>SRC\INCLUDE</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>SRC\INCLUDE</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>SRC\INCLUDE</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Activate.c" />
+    <ClCompile Include="src\AddCandidate.c" />
+    <ClCompile Include="src\AddExtraCandidates.c" />
+    <ClCompile Include="src\AddTourCandidates.c" />
+    <ClCompile Include="src\AdjustCandidateSet.c" />
+    <ClCompile Include="src\AdjustClusters.c" />
+    <ClCompile Include="src\AllocateStructures.c" />
+    <ClCompile Include="src\Ascent.c" />
+    <ClCompile Include="src\Best2OptMove.c" />
+    <ClCompile Include="src\Best3OptMove.c" />
+    <ClCompile Include="src\Best4OptMove.c" />
+    <ClCompile Include="src\Best5OptMove.c" />
+    <ClCompile Include="src\BestKOptMove.c" />
+    <ClCompile Include="src\BestSpecialOptMove.c" />
+    <ClCompile Include="src\Between.c" />
+    <ClCompile Include="src\Between_SL.c" />
+    <ClCompile Include="src\Between_SSL.c" />
+    <ClCompile Include="src\BIT.c" />
+    <ClCompile Include="src\BridgeGain.c" />
+    <ClCompile Include="src\BuildKDTree.c" />
+    <ClCompile Include="src\C.c" />
+    <ClCompile Include="src\CandidateReport.c" />
+    <ClCompile Include="src\ChooseInitialTour.c" />
+    <ClCompile Include="src\Connect.c" />
+    <ClCompile Include="src\CreateCandidateSet.c" />
+    <ClCompile Include="src\CreateDelaunayCandidateSet.c" />
+    <ClCompile Include="src\CreateNNCandidateSet.c" />
+    <ClCompile Include="src\CreateQuadrantCandidateSet.c" />
+    <ClCompile Include="src\Create_POPMUSIC_CandidateSet.c" />
+    <ClCompile Include="src\CTSP_InitialTour.c" />
+    <ClCompile Include="src\CVRP_InitialTour.c" />
+    <ClCompile Include="src\Delaunay.c" />
+    <ClCompile Include="src\Distance.c" />
+    <ClCompile Include="src\Distance_MTSP.c" />
+    <ClCompile Include="src\Distance_SOP.c" />
+    <ClCompile Include="src\Distance_SPECIAL.c" />
+    <ClCompile Include="src\eprintf.c" />
+    <ClCompile Include="src\ERXT.c" />
+    <ClCompile Include="src\Excludable.c" />
+    <ClCompile Include="src\Exclude.c" />
+    <ClCompile Include="src\FindTour.c" />
+    <ClCompile Include="src\FixedOrCommonCandidates.c" />
+    <ClCompile Include="src\Flip.c" />
+    <ClCompile Include="src\Flip_SL.c" />
+    <ClCompile Include="src\Flip_SSL.c" />
+    <ClCompile Include="src\Forbidden.c" />
+    <ClCompile Include="src\FreeStructures.c" />
+    <ClCompile Include="src\fscanint.c" />
+    <ClCompile Include="src\Gain23.c" />
+    <ClCompile Include="src\GenerateCandidates.c" />
+    <ClCompile Include="src\Genetic.c" />
+    <ClCompile Include="src\GeoConversion.c" />
+    <ClCompile Include="src\GetTime.c" />
+    <ClCompile Include="src\gpx.c" />
+    <ClCompile Include="src\GreedyTour.c" />
+    <ClCompile Include="src\Hashing.c" />
+    <ClCompile Include="src\Heap.c" />
+    <ClCompile Include="src\Improvement.c" />
+    <ClCompile Include="src\IsBackboneCandidate.c" />
+    <ClCompile Include="src\IsCandidate.c" />
+    <ClCompile Include="src\IsCommonEdge.c" />
+    <ClCompile Include="src\IsPossibleCandidate.c" />
+    <ClCompile Include="src\KSwapKick.c" />
+    <ClCompile Include="src\LinKernighan.c" />
+    <ClCompile Include="SRC\LKH.c" />
+    <ClCompile Include="src\LKHmain.c" />
+    <ClCompile Include="src\Make2OptMove.c" />
+    <ClCompile Include="src\Make3OptMove.c" />
+    <ClCompile Include="src\Make4OptMove.c" />
+    <ClCompile Include="src\Make5OptMove.c" />
+    <ClCompile Include="src\MakeKOptMove.c" />
+    <ClCompile Include="src\MergeTourWithBestTour.c" />
+    <ClCompile Include="SRC\MergeWithTourCLARIST.c" />
+    <ClCompile Include="src\MergeWithTourGPX2.c" />
+    <ClCompile Include="src\MergeWithTourIPT.c" />
+    <ClCompile Include="src\Minimum1TreeCost.c" />
+    <ClCompile Include="src\MinimumSpanningTree.c" />
+    <ClCompile Include="src\MTSP2TSP.c" />
+    <ClCompile Include="src\MTSP_InitialTour.c" />
+    <ClCompile Include="src\MTSP_Report.c" />
+    <ClCompile Include="src\MTSP_WriteSolution.c" />
+    <ClCompile Include="src\NormalizeNodeList.c" />
+    <ClCompile Include="src\NormalizeSegmentList.c" />
+    <ClCompile Include="src\OrderCandidateSet.c" />
+    <ClCompile Include="src\PatchCycles.c" />
+    <ClCompile Include="src\PDPTW_Reduce.c" />
+    <ClCompile Include="src\Penalty_1_PDTSP.c" />
+    <ClCompile Include="src\Penalty_ACVRP.c" />
+    <ClCompile Include="src\Penalty_BWTSP.c" />
+    <ClCompile Include="src\Penalty_CCVRP.c" />
+    <ClCompile Include="src\Penalty_CTSP.c" />
+    <ClCompile Include="src\Penalty_CVRP.c" />
+    <ClCompile Include="src\Penalty_CVRPTW.c" />
+    <ClCompile Include="SRC\Penalty_KTSP.c" />
+    <ClCompile Include="src\Penalty_M1_PDTSP.c" />
+    <ClCompile Include="src\Penalty_MLP.c" />
+    <ClCompile Include="src\Penalty_MTSP.c" />
+    <ClCompile Include="src\Penalty_M_PDTSP.c" />
+    <ClCompile Include="src\Penalty_OVRP.c" />
+    <ClCompile Include="src\Penalty_PDPTW.c" />
+    <ClCompile Include="src\Penalty_PDTSP.c" />
+    <ClCompile Include="src\Penalty_PDTSPF.c" />
+    <ClCompile Include="src\Penalty_PDTSPL.c" />
+    <ClCompile Include="src\Penalty_RCTVRP.c" />
+    <ClCompile Include="src\Penalty_SOP.c" />
+    <ClCompile Include="src\Penalty_TRP.c" />
+    <ClCompile Include="src\Penalty_TSPDL.c" />
+    <ClCompile Include="src\Penalty_TSPPD.c" />
+    <ClCompile Include="src\Penalty_TSPTW.c" />
+    <ClCompile Include="src\Penalty_VRPB.c" />
+    <ClCompile Include="src\Penalty_VRPBTW.c" />
+    <ClCompile Include="src\Penalty_VRPPD.c" />
+    <ClCompile Include="src\printff.c" />
+    <ClCompile Include="src\PrintParameters.c" />
+    <ClCompile Include="src\Random.c" />
+    <ClCompile Include="src\ReadCandidates.c" />
+    <ClCompile Include="src\ReadEdges.c" />
+    <ClCompile Include="src\ReadLine.c" />
+    <ClCompile Include="src\ReadParameters.c" />
+    <ClCompile Include="src\ReadPenalties.c" />
+    <ClCompile Include="src\ReadProblem.c" />
+    <ClCompile Include="src\RecordBestTour.c" />
+    <ClCompile Include="src\RecordBetterTour.c" />
+    <ClCompile Include="src\RemoveFirstActive.c" />
+    <ClCompile Include="src\ResetCandidateSet.c" />
+    <ClCompile Include="src\RestoreTour.c" />
+    <ClCompile Include="src\SegmentSize.c" />
+    <ClCompile Include="src\Sequence.c" />
+    <ClCompile Include="src\SFCTour.c" />
+    <ClCompile Include="src\SINTEF_WriteSolution.c" />
+    <ClCompile Include="src\SolveCompressedSubproblem.c" />
+    <ClCompile Include="src\SolveDelaunaySubproblems.c" />
+    <ClCompile Include="src\SolveKarpSubproblems.c" />
+    <ClCompile Include="src\SolveKCenterSubproblems.c" />
+    <ClCompile Include="src\SolveKMeansSubproblems.c" />
+    <ClCompile Include="src\SolveRoheSubproblems.c" />
+    <ClCompile Include="src\SolveSFCSubproblems.c" />
+    <ClCompile Include="src\SolveSubproblem.c" />
+    <ClCompile Include="src\SolveSubproblemBorderProblems.c" />
+    <ClCompile Include="src\SolveTourSegmentSubproblems.c" />
+    <ClCompile Include="src\SOP_InitialTour.c" />
+    <ClCompile Include="src\SOP_RepairTour.c" />
+    <ClCompile Include="src\SOP_Report.c" />
+    <ClCompile Include="src\Statistics.c" />
+    <ClCompile Include="src\StatusReport.c" />
+    <ClCompile Include="src\StoreTour.c" />
+    <ClCompile Include="src\STTSP2TSP.c" />
+    <ClCompile Include="src\SymmetrizeCandidateSet.c" />
+    <ClCompile Include="src\TrimCandidateSet.c" />
+    <ClCompile Include="src\TSPDL_InitialTour.c" />
+    <ClCompile Include="src\TSPTW_MakespanCost.c" />
+    <ClCompile Include="src\TSPTW_Reduce.c" />
+    <ClCompile Include="src\VRPB_Reduce.c" />
+    <ClCompile Include="src\WriteCandidates.c" />
+    <ClCompile Include="src\WritePenalties.c" />
+    <ClCompile Include="src\WriteTour.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\BIT.h" />
+    <ClInclude Include="SRC\INCLUDE\CLARIST.h" />
+    <ClInclude Include="src\include\Delaunay.h" />
+    <ClInclude Include="src\include\GainType.h" />
+    <ClInclude Include="src\include\Genetic.h" />
+    <ClInclude Include="src\include\GeoConversion.h" />
+    <ClInclude Include="src\include\gpx.h" />
+    <ClInclude Include="src\include\Hashing.h" />
+    <ClInclude Include="src\include\Heap.h" />
+    <ClInclude Include="src\include\LKH.h" />
+    <ClInclude Include="src\include\Segment.h" />
+    <ClInclude Include="src\include\Sequence.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
