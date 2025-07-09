@@ -19,11 +19,6 @@ Time window feasibility is enforced as a hard constraint, independent of the pri
 EV-Specific Cost Modeling:
 Incorporates dynamic wireless charging (DWC) roads. The solver can optimize not just classic cost, but also the stability of State-of-Charge (SOC) — minimizing battery fluctuations over the full PDPTW route.
 
-Customizable for Smart Mobility Scenarios:
-Especially suited for research on shared autonomous vehicles (SAVs) and electric fleet operations in urban road networks.
-
-Example Use Cases
-Optimize EV routing for cost efficiency, grid-friendliness, or battery health.
 
 The results of stabilising the EV SOC are as follows:
 
