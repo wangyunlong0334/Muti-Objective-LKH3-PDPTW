@@ -39,6 +39,8 @@ For windows : cmd    "yourpath\LKH-3.exe" "yourpath\pdpdwc0.par"
 Also can be edited in: Muti-Objective-LKH3-PDPTW/LKH/SRC. And then release the new exe file.
 
 If this is helpful to you, please cite the following papers (the LKH model used in the paper is M1-PDTSP, not PDPTW):
+"A Novel Deep Reinforcement Learning Framework for Shared Autonomous Vehicles Pickup, Delivery, and Charging Problem":
 https://ieeexplore.ieee.org/document/11048880
 
+"Enabling Continuous Operation of Shared Autonomous Vehicles With Dynamic Wireless Charging"
 https://ieeexplore.ieee.org/document/10571776
