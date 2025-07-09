@@ -1,5 +1,6 @@
 # Muti-Objective-LKH3-PDPTW
 LKH3-PDPTW: Flexible Multi-Objective Solver for Electric Shared Mobility
+Separate the optimisation objective from the constraints (in the original PDPTW, both the optimisation objective and constraints are TW). In this method, different combinations of optimisation objectives (first matrix) can be set, and the time matrix can be entered separately as a TW constraint.
 
 Original project: http://webhotel4.ruc.dk/~keld/research/LKH-3/
 
@@ -9,19 +10,14 @@ Key Features
 Flexible Objective Functions:
 Solve PDPTW with user-defined optimization targets:
 
-Travel time
-
-Distance
-
-Energy consumption
-
-Composite cost (any weighted combination of the above)
-
-EV-Specific Cost Modeling:
-Incorporates dynamic wireless charging (DWC) roads. The solver can optimize not just classic cost, but also the stability of State-of-Charge (SOC) — minimizing battery fluctuations over the full PDPTW route.
+Travel time, Distance, Energy consumption, Combined cost (any weighted combination of the above)
 
 Strict Time Window Constraints:
 Time window feasibility is enforced as a hard constraint, independent of the primary objective function.
+
+
+EV-Specific Cost Modeling:
+Incorporates dynamic wireless charging (DWC) roads. The solver can optimize not just classic cost, but also the stability of State-of-Charge (SOC) — minimizing battery fluctuations over the full PDPTW route.
 
 Customizable for Smart Mobility Scenarios:
 Especially suited for research on shared autonomous vehicles (SAVs) and electric fleet operations in urban road networks.
@@ -44,3 +40,8 @@ The codebase preserves LKH3’s performance while offering new flexibility for n
 #How to run:
 
 For windows : cmd    "yourpath\LKH-3.exe" "yourpath\pdpdwc0.par"
+Also can be edited in: Muti-Objective-LKH3-PDPTW/LKH/SRC. And then release the new exe file.
+
+If this is helpful to you, please cite the following papers (the LKH model used in the paper is M1-PDTSP, not PDPTW):
+https://ieeexplore.ieee.org/document/11048880
+https://ieeexplore.ieee.org/document/10571776
