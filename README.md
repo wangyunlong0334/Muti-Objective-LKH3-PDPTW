@@ -25,17 +25,13 @@ Especially suited for research on shared autonomous vehicles (SAVs) and electric
 Example Use Cases
 Optimize EV routing for cost efficiency, grid-friendliness, or battery health.
 
-Model PDPTW for future mobility systems with on-road charging infrastructure.
-
+The results of stabilising the EV SOC are as follows:
 
 ![Picture1](https://github.com/user-attachments/assets/1f9a7ad9-aaf1-4ce0-9132-84aeab220a4c)
 
-Research agent-based dispatch, RL policy evaluation, or realistic urban logistics.
 
 Getting Started
 Please refer to the README for compilation, input file examples, and usage instructions.
-The codebase preserves LKH3’s performance while offering new flexibility for next-generation urban transport studies.
-
 
 #How to run:
 
