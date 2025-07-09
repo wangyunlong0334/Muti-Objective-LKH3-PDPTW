@@ -31,8 +31,14 @@ Optimize EV routing for cost efficiency, grid-friendliness, or battery health.
 
 Model PDPTW for future mobility systems with on-road charging infrastructure.
 
+
+
 Research agent-based dispatch, RL policy evaluation, or realistic urban logistics.
 
 Getting Started
 Please refer to the README for compilation, input file examples, and usage instructions.
 The codebase preserves LKH3’s performance while offering new flexibility for next-generation urban transport studies.
+
+
+How to run:
+"yourpath\LKH-3.exe" "yourpath\pdpdwc0.par"
