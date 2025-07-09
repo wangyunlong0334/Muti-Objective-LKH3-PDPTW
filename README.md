@@ -41,4 +41,4 @@ The codebase preserves LKH3’s performance while offering new flexibility for n
 
 
 How to run:
-"yourpath\LKH-3.exe" "yourpath\pdpdwc0.par"
+For windows : cmd    "yourpath\LKH-3.exe" "yourpath\pdpdwc0.par"
