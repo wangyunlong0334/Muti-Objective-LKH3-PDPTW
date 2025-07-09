@@ -32,6 +32,7 @@ Optimize EV routing for cost efficiency, grid-friendliness, or battery health.
 Model PDPTW for future mobility systems with on-road charging infrastructure.
 
 
+![Picture1](https://github.com/user-attachments/assets/1f9a7ad9-aaf1-4ce0-9132-84aeab220a4c)
 
 Research agent-based dispatch, RL policy evaluation, or realistic urban logistics.
 
